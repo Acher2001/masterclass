@@ -4,7 +4,12 @@ from tkinter import messagebox
 root=Tk()
 
 def clic():
-    
+    v=ves.get()
+    r=rost.get()
+    imt=int(v)/((int(r)/100)**2)
+
+    info_str=f'ИМТ: {imt}'
+    messagebox.showinfo(title='Индекс Массы Тела', message=info_str)
 
 
 root['bg']='#ffffff'  #Вводим фон
